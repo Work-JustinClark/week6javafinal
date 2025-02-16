@@ -31,19 +31,25 @@ public class App {
 		if (card.getValue()> card2.getValue()) {
 			player1.incrementScore();
 			System.out.println("Player 1 wins this round!");
+			System.out.println("Current Score: " + "Player 1 has" + " - " + player1.getScore() +" points" + ", " + "Player 2 has" +
+					" - " + player2.getScore()+" points");
 			System.out.println("----------------------------");
 		} else if (card.getValue()< card2.getValue()) {
 			player2.incrementScore();
 			System.out.println("Player 2 wins this round!");
+			System.out.println("Current Score: " + "Player 1 has" + " - " + player1.getScore() +" points" + ", " + "Player 2 has" +
+					" - " + player2.getScore()+" points");
 			System.out.println("----------------------------");
 		} else {
 			System.out.println("This round is a draw!");
+			System.out.println("Current Score: " + "Player 1 has" + " - " + player1.getScore() +" points" + ", " + "Player 2 has" +
+					" - " + player2.getScore()+" points");
 			System.out.println("----------------------------");
 		}
 	}
 
-    System.out.println("Final Score: " + "Player 1" + " - " + player1.getScore() + ", " + "Player 2" +
-    									" - " + player2.getScore());
+	System.out.println("Final Score: " + "Player 1 has" + " - " + player1.getScore() +" points" + ", " + "Player 2 has" +
+			" - " + player2.getScore()+" points");
     if (player1.getScore()>player2.getScore()){
     	System.out.println("Player 1 wins the game of War!");
     } else if (player1.getScore() < player2.getScore()) {
